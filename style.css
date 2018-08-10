@@ -1,0 +1,9 @@
+.answer{
+    display: none;
+}
+
+.question{
+    /*background-image: url(Pictures/flashcard.png)*/
+    background-color: green;
+}
+
