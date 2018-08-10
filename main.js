@@ -1,6 +1,6 @@
 const questions  = [
     {
-        question: 'What is life?',
+        question: '?',
         answer: 'beautiful'
     },
     {
@@ -33,8 +33,6 @@ parent.appendChild(label);
 function pressAnswer(){
     document.getElementById("someid").innerHTML = showAnswer 
  }
-
-
 
  function submitFlashcard(){
     let inputQuestionField = document.getElementById("inputQuestion")
@@ -98,6 +96,7 @@ callList();
     for (var i = itemsToDelete.length; i > 0; i--) {
     listQuestions.removeChild(itemsToDelete[i-1]);
     }
+    updateCounters();
 }
 
 function updateCounters(){
@@ -108,3 +107,13 @@ function updateCounters(){
   
   updateCounters();
 
+function nextQuestion(){
+    var otherQuestion  = questions[Math.floor((Math.random()*questions.length-1)+1)];
+    var newFlashcard = document.getElementById('flashcard');
+    
+    if(otherQuestion !== randomQuestion) {
+        newFlashcard.innerHTML =  otherQuestion.question
+    }else{
+        otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
+}
+}
