@@ -1,19 +1,35 @@
 const questions  = [
     {
-        question: '?',
-        answer: 'beautiful'
+        question: 'How can you add a comment in a JavaScript?',
+        answer: '//This is a comment'
     },
     {
-        question: '1',
-        answer: 'bananas'
+        question: 'How to insert a comment that has more than one line?',
+        answer: '/*This comment has more than one line*/'
     },
     {
-        question: '2',
-        answer: 'apples'
+        question: 'How do you round the number 7.25, to the nearest integer?',
+        answer: 'Math.round(7.25)'
     },
     {
-        question: '3',
-        answer: 'mangos'
+        question: 'JavaScript is the same as Java?',
+        answer: 'False'
+    },
+    {
+        question: 'Which event occurs when the user clicks on an HTML element? ',
+        answer: 'onclick'
+    }, {
+        question: 'Which operator is used to assign a value to a variable?',
+        answer: '='
+    }, {
+        question: 'Is JavaScript case-sensitive?',
+        answer: 'Yes'
+    }, {
+        question: 'Inside which HTML element do we put the JavaScript?',
+        answer: '</script>'
+    }, {
+        question: 'What is a boolean?',
+        answer: 'true or false'
     },
 ]
 

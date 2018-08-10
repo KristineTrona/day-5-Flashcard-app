@@ -4,7 +4,9 @@ body{
 .flashcard{
     /*background-image: url(Pictures/flashcard.png)*/
     background-color: green;
-    padding-top: 40px; 
+    /* padding: auto;  */
+    vertical-align: middle;
+    text-align: center;
 
 }
 
