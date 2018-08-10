@@ -2,32 +2,41 @@
 const questions  = [
     {
         question: 'What is life?',
-        answer: 'to fix all bugs'
+        answer: 'beautiful'
     },
     {
         question: '1',
-        answer: 'to fix all bugs'
+        answer: 'bananas'
     },
     {
         question: '2',
-        answer: 'to fix all bugs'
+        answer: 'apples'
     },
     {
         question: '3',
-        answer: 'to fix all bugs'
+        answer: 'mangos'
     },
 ]
 
 var randomQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
-// console.log(randomQuestion)
 
 let question = randomQuestion.question
+let answer = randomQuestion.answer
 
-function showQuestion(){
+
+let label = document.createElement("label");
+label.setAttribute("id", "someid")
+label.innerHTML = question;
+
+let parent = document.getElementsByClassName("flashcard")[0];
+parent.appendChild(label);
+
+function pressAnswer(){
+
+document.getElementById("someid").innerHTML = answer 
     
-    document.write(question)
-};
-showQuestion();
+ }
+
 
 
 
