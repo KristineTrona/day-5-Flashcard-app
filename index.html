@@ -6,13 +6,23 @@
     <title>Flashcard app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    
 </head>
 <body>
     <h1>Hello, answer you question!</h1>
-    <div class = "flashcard" onclick="pressAnswer(event)">
-    
+    <form onsubmit="submitFlashcard(); return false">
+        <input type="text" id="inputQuestion" placeholder="Write your question here">
+        <br>
+        <input type="text" id="inputAnswer" placeholder="Write the answer">
+        <br>
+        <input type="submit">
+    </form>
+    <div class = "flashcard" onclick="pressAnswer()">
     </div>
+    <h3>List of all questions:</h3>   
+    <ul id = "listQuestions"> 
+
+    </ul>
+
 </body>
 <script src="main.js"></script>
 </html>
