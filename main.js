@@ -21,15 +21,15 @@ const questions  = [
 var randomQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
 // console.log(randomQuestion)
 
-let question = questions.question
+let question = randomQuestion.question
 
 function showQuestion(){
     
-    document.write(randomQuestion)
-   
-    //question.innerHTML = randomQuestion 
+    document.write(question)
 };
 showQuestion();
+
+
 
 // var found = questions.find(function())
 
