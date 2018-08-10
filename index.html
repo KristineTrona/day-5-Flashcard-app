@@ -6,28 +6,27 @@
     <title>Flashcard app</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="main.js"></script>
 </head>
 <body>
     <h1>Hello, answer you question!</h1>
-    <div class = "question 1">
-       <label id = "1">What do you use const for?</label>
+    <div class = "flashcard" onclick="pressAnswer()">
     </div>
-    <div class = "answer 1">
-        <label id = "1">You use const to declare a constant variable</label>
+    <form onsubmit="submitFlashcard(); return false">
+            <input type="text" id="inputQuestion" placeholder="Write your question here">
+            <br>
+            <input type="text" id="inputAnswer" placeholder="Write the answer">
+            <br>
+            <input type="submit">
+        </form>
+    <h3>List of all questions:</h3>   
+    <div id = "listQuestions"> 
+
     </div>
-    <div class = "question">
-        <label id = "2">What do you use const for?</label>
-    </div>
-     <div class = "answer">
-        <label id = "2"> DOM is document object model </label>
-    </div>
-    <div class = "question" id = "3">
-        <label id  = "3">Test question</label>
-    </div>
-    <div class = "answer" id = "3">
-        <label id = "3">Some answer</label>
-    </div>
+    <div class="footer">
+        Total: <span id="total-count">1</span>
+      
+        <a href="#" onclick="cleanUpFlashcards(); return false">Clean up</a>
 
 </body>
+<script src="main.js"></script>
 </html>
