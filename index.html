@@ -10,23 +10,24 @@
     <link rel="shortcut icon" href="Pictures/question.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Hello, answer you question!</h1>
-    <div class = "flashcard" onclick="pressAnswer()">
+    <h1>Flashcard questions!</h1>
+    <div class = "flashcard" id='flashcard' onclick="pressAnswer()">
     </div>
     <div class = "nextButton">
         <button onclick="nextQuestion()">Next Question</button>
     </div>
-    <form onsubmit="submitFlashcard(); return false">
+    <form class="form" onsubmit="submitFlashcard(); return false">
             <input type="text" id="inputQuestion" placeholder="Write your question here">
             <br>
             <input type="text" id="inputAnswer" placeholder="Write the answer">
             <br>
-            <input type="submit">
-        </form>
-    <h3>List of all questions:</h3>   
+            <input class="submitButton"type="submit">
+    </form>
+    <h2>List of all questions:</h2>   
     <div id = "listQuestions"> 
 
     </div>
+    <br>
     <div class="footer">
         Total: <span id="total-count">1</span>
       

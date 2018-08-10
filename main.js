@@ -126,10 +126,18 @@ function updateCounters(){
 function nextQuestion(){
     var otherQuestion  = questions[Math.floor((Math.random()*questions.length-1)+1)];
     var newFlashcard = document.getElementById('flashcard');
+
+    showQuestion = otherQuestion.question
+    showAnswer = otherQuestion.answer
+
+    newFlashcard.innerHTML =  otherQuestion.question
+
+    pressAnswer();
     
-    if(otherQuestion !== randomQuestion) {
+   /* if(otherQuestion !== randomQuestion) {
         newFlashcard.innerHTML =  otherQuestion.question
     }else{
         otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
-}
+}*/
+
 }
