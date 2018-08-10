@@ -1,20 +1,35 @@
-
 const questions  = [
     {
-        question: 'What is life?',
-        answer: 'beautiful'
+        question: 'How can you add a comment in a JavaScript?',
+        answer: '//This is a comment'
     },
     {
-        question: '1',
-        answer: 'bananas'
+        question: 'How to insert a comment that has more than one line?',
+        answer: '/*This comment has more than one line*/'
     },
     {
-        question: '2',
-        answer: 'apples'
+        question: 'How do you round the number 7.25, to the nearest integer?',
+        answer: 'Math.round(7.25)'
     },
     {
-        question: '3',
-        answer: 'mangos'
+        question: 'JavaScript is the same as Java?',
+        answer: 'False'
+    },
+    {
+        question: 'Which event occurs when the user clicks on an HTML element? ',
+        answer: 'onclick'
+    }, {
+        question: 'Which operator is used to assign a value to a variable?',
+        answer: '='
+    }, {
+        question: 'Is JavaScript case-sensitive?',
+        answer: 'Yes'
+    }, {
+        question: 'Inside which HTML element do we put the JavaScript?',
+        answer: '</script>'
+    }, {
+        question: 'What is a boolean?',
+        answer: 'true or false'
     },
 ]
 
@@ -31,12 +46,9 @@ let parent = document.getElementsByClassName("flashcard")[0];
 parent.appendChild(label);
 
 
-
 function pressAnswer(){
     document.getElementById("someid").innerHTML = showAnswer 
  }
-
-
 
  function submitFlashcard(){
     let inputQuestionField = document.getElementById("inputQuestion")
@@ -100,6 +112,7 @@ callList();
     for (var i = itemsToDelete.length; i > 0; i--) {
     listQuestions.removeChild(itemsToDelete[i-1]);
     }
+    updateCounters();
 }
 
 function updateCounters(){
@@ -110,6 +123,7 @@ function updateCounters(){
   
   updateCounters();
 
+<<<<<<< HEAD
 
   var otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)].question;
   var newFlashcard = document.getElementById("flashcard")
@@ -121,3 +135,23 @@ function updateCounters(){
     otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
   }
  }
+=======
+function nextQuestion(){
+    var otherQuestion  = questions[Math.floor((Math.random()*questions.length-1)+1)];
+    var newFlashcard = document.getElementById('flashcard');
+
+    showQuestion = otherQuestion.question
+    showAnswer = otherQuestion.answer
+
+    newFlashcard.innerHTML =  otherQuestion.question
+
+    pressAnswer();
+    
+   /* if(otherQuestion !== randomQuestion) {
+        newFlashcard.innerHTML =  otherQuestion.question
+    }else{
+        otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
+}*/
+
+}
+>>>>>>> db4d7242dde1c852fe554483ace92251c4c93513

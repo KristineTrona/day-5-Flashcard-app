@@ -1,6 +1,39 @@
-
-.flashcard{
-    /*background-image: url(Pictures/flashcard.png)*/
-    background-color: green;
+body{
+    font-family: Sunflower;
+    font-size: 30px;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.flashcard{
+    /* background-image: url(Pictures/flashcard_image.png); */
+    background-color: #c6e8eb;
+    background-repeat: no-repeat;
+    padding: 45px; 
+    text-align: center;
+    height: 100px;
+}
+
+.nextButton{
+    height: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer{
+    font-size: 20px;
+}
+
+.toDelete{
+    text-decoration: line-through;
+    color: #999;
+}
+
+#listQuestions{
+    font-size: 17px;
+}
