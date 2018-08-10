@@ -109,3 +109,15 @@ function updateCounters(){
   }
   
   updateCounters();
+
+
+  var otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)].question;
+  var newFlashcard = document.getElementById("flashcard")
+
+  if(otherQuestion !== randomQuestion){
+    newFlashcard.innerHTML = otherQuestion
+  }
+  else{
+    otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
+  }
+ }
