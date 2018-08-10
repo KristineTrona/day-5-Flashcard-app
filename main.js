@@ -1,21 +1,33 @@
 
+const questions  = [
+    {
+        question: 'What is life?',
+        answer: 'to fix all bugs'
+    },
+    {
+        question: '1',
+        answer: 'to fix all bugs'
+    },
+    {
+        question: '2',
+        answer: 'to fix all bugs'
+    },
+    {
+        question: '3',
+        answer: 'to fix all bugs'
+    },
+]
 
+var randomQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
+// console.log(randomQuestion)
 
-// let questions = document.getElementsByClassName("question");
-
-// let answers = document.getElementsByClassName("answer");
-
-// var questionsLength = questions.length;
-
-let questions = ["Q1", "Q2", "Q3"];
-
-let answers = ["A1", "A2", "A3"];
-
-var randomQuestion = Math.floor((Math.random()*questions.length-1)+1);
-console.log(randomQuestion)
+let question = questions.question
 
 function showQuestion(){
-   console.log(questions[randomQuestion]) 
+    
+    document.write(randomQuestion)
+   
+    //question.innerHTML = randomQuestion 
 };
 showQuestion();
 
