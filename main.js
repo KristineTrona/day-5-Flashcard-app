@@ -46,11 +46,13 @@ function pressAnswer(){
     let answer = inputAnswerField.value
 
     questions.push({question, answer})
+
     callList();
-
-
+    updateCounters();
+    inputQuestionField.value = null;
+    inputAnswerField.value = null;
  }
-
+ 
 
    function callList() {
        
@@ -78,14 +80,6 @@ function pressAnswer(){
 
 callList();
 
-function updateCounters(){
-    var totalCount = document.getElementById('total-count');
-    var totalQuestions = document.getElementsByClassName("listItem").length;
-    totalCount.innerHTML = totalQuestions;
-  }
-  
-  updateCounters();
-
   function toggleDone() {
     var checkbox = this;
 
@@ -107,3 +101,11 @@ function updateCounters(){
     listQuestions.removeChild(itemsToDelete[i-1]);
     }
 }
+
+function updateCounters(){
+    var totalCount = document.getElementById('total-count');
+    var totalQuestions = document.getElementsByClassName("listItem").length;
+    totalCount.innerHTML = totalQuestions;
+  }
+  
+  updateCounters();
