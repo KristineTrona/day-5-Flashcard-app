@@ -14,7 +14,7 @@
     <div class = "flashcard" id='flashcard' onclick="pressAnswer()">
     </div>
     <div class = "nextButton">
-        <button onclick="nextQuestion()">Next Question</button>
+        <button id = "nextQuestion"onclick="nextQuestion()">Next Question</button>
     </div>
     <form class="form" onsubmit="submitFlashcard(); return false">
             <input type="text" id="inputQuestion" placeholder="Write your question here">
@@ -31,7 +31,7 @@
     <div class="footer">
         Total: <span id="total-count">1</span>
       
-        <a href="#" onclick="cleanUpFlashcards(); return false">Clean up</a>
+        <a href="#" onclick="cleanUpFlashcards(); return false">Delete questions</a>
 
 </body>
 <script src="main.js"></script>

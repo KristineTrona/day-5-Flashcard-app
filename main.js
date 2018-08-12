@@ -38,7 +38,6 @@ var randomQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)]
 let showQuestion = randomQuestion.question
 let showAnswer = randomQuestion.answer
 
-
 let label = document.createElement("label");
 label.setAttribute("id", "someid")
 label.innerHTML = showQuestion;
@@ -47,7 +46,7 @@ parent.appendChild(label);
 
 
 function pressAnswer(){
-    document.getElementById("someid").innerHTML = showAnswer 
+    document.getElementById("someid").innerText = showAnswer 
  }
 
  function submitFlashcard(){
@@ -79,7 +78,7 @@ function pressAnswer(){
         var checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.setAttribute("onchange", "toggleDone.bind(this)()")
-        //checkbox.id = "box" + nextTodoId();
+       
         checkbox.checked = false;
         listQuestions.appendChild(checkbox)
         listQuestions.setAttribute("class", "listItem")
@@ -123,35 +122,13 @@ function updateCounters(){
   
   updateCounters();
 
-<<<<<<< HEAD
-
-  var otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)].question;
-  var newFlashcard = document.getElementById("flashcard")
-
-  if(otherQuestion !== randomQuestion){
-    newFlashcard.innerHTML = otherQuestion
-  }
-  else{
-    otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
-  }
- }
-=======
 function nextQuestion(){
     var otherQuestion  = questions[Math.floor((Math.random()*questions.length-1)+1)];
-    var newFlashcard = document.getElementById('flashcard');
+    //var newFlashcard = document.getElementById('flashcard');
 
     showQuestion = otherQuestion.question
     showAnswer = otherQuestion.answer
 
-    newFlashcard.innerHTML =  otherQuestion.question
-
-    pressAnswer();
-    
-   /* if(otherQuestion !== randomQuestion) {
-        newFlashcard.innerHTML =  otherQuestion.question
-    }else{
-        otherQuestion = questions[Math.floor((Math.random()*questions.length-1)+1)];
-}*/
+    label.innerHTML = showQuestion;
 
 }
->>>>>>> db4d7242dde1c852fe554483ace92251c4c93513

@@ -27,6 +27,10 @@ input[type=text] {
 
 .footer{
     font-size: 20px;
+    background-color: #75797f;
+    color: white;
+    padding-left: 20px;
+    width: 50%;
 }
 
 .toDelete{
@@ -36,4 +40,20 @@ input[type=text] {
 
 #listQuestions{
     font-size: 17px;
+}
+
+.footer a{
+    padding-left: 10px;
+    color: white;
+}
+
+.submitButton, #nextQuestion {
+    background-color: #659ced;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
