@@ -130,5 +130,4 @@ function nextQuestion(){
     showAnswer = otherQuestion.answer
 
     label.innerHTML = showQuestion;
-
 }
